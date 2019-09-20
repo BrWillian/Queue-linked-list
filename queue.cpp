@@ -1,4 +1,5 @@
 #include "queue.h"
+#include <iostream>
 
 Queue::Queue()
 {
@@ -37,4 +38,18 @@ bool Queue::deQueue(int *dat)
         tail = nullptr;
     }
     return true;
+}
+bool Queue::IsEmpty()
+{
+    return !head;
+}
+void Queue::ListAll()
+{
+    Node *p = head;
+
+    while(p)
+    {
+        std::cout<<p->GetD()<<" ";
+        p = p->GetNext();
+    }
 }

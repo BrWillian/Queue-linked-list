@@ -32,3 +32,7 @@ Node *Node::GetNext()
 {
     return next;
 }
+int Node::GetD()
+{
+    return D;
+}

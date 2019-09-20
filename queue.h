@@ -11,6 +11,7 @@ public:
     bool enQueue(int *dat);
     bool deQueue(int *dat);
     bool IsEmpty();
+    void ListAll();
 };
 
 #endif // QUEUE_H

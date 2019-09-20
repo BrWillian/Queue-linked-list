@@ -13,6 +13,7 @@ public:
     static void DesmountNode(int *dat, Node *p);
     void SetNext(Node *p);
     Node *GetNext();
+    int GetD();
 };
 
 #endif // NODE_H
